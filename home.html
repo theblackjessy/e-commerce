@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuNu</title>
+</head>
+<link rel="stylesheet" href="home.css">
+<body>
+        <nav class="row">
+            <div class="navbar_flex">
+                <div class="nav1">
+                    <img src="./images/cart.png" alt="" class="cartvessel" >
+                    <div class="shopname">
+                        <h3>EasyShop</h3>
+                        <p> Marketplace Storefront</p>
+
+                    </div>
+                </div>
+                
+                <div class="nav2">
+                    <div class="search">
+                    <img src="./images/search.png" alt="" class="search_icon">
+                    <input type="text" placeholder="Search.." class="input">
+                </div>
+                <div class="clock">
+                    <img src="./images/notifications_active_FILL0_wght600_GRAD0_opsz48.png" alt="">
+                </div>
+                </div>
+                
+                <div class="nav3">
+                    
+                    <img src="./images/image-thomas.jpg" alt="" class="owner_photo">
+                    <div class="shopname">
+                        <h3>Akinpelu Sloav</h3>
+                        <p>Store Owner</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+        <aside>
+                <div class="sidebar">
+                    <a href="#" style="padding-top: 10px;">
+                        <img src="./images/dashboard.png" alt="">
+                        <h3>Dashboard</h3>
+                    </a>
+            
+                    <a href="#" class="active" >
+                        <img src="./images/orders.png" alt="">
+                        <h3>Orders</h3>
+                    </a>
+            
+                    <a href="#">
+                        <img src="./images/cutomer.png" alt="">
+                        <h3>Customers</h3>
+                    </a>
+            
+                    <a href="#">
+                        <img src="./images/products (2).png" alt="">
+                        <h3>Products</h3>
+                    </a>
+            
+                    <a href="#">
+                        <img src="./images/report.png" alt="">
+                        <h3>Report</h3>
+                    </a>
+            
+                    <a href="#">
+                        <img src="./images/message.png" alt="">
+                        <h3>Messages</h3>
+                    </a>
+            
+                    <a href="#">
+                        <img src="./images/help.png" alt="">
+                        <h3>Help Center</h3>
+                    </a>
+                    <a href="#">
+                        <img src="./images/settings.png" alt="">
+                        <h3>Settings</h3>
+                    </a>
+                    <a href="#">
+                        <img src="./images/logout.png" alt="">
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            
+        </aside>
+        <main class="main-container">
+            <div class="main-top">
+                <article class="top-article">
+                    <h2>Welcome, Akintayo</h2>
+                    <p>Stay up to date with your store's current status</p>
+                </article>
+                <div class="top-side">
+                <div class="date">
+                    <input type="date">
+                </div>
+                <div class="pdf">
+                    <h2>Download PDF</h2>
+                </div>
+            </div>
+        
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <div class="sale">
+                    <div class="sales_icon">
+                    <img src="./images/analy.png" alt="">
+                </div>
+                    <div class="middle">
+                        <div class="progress">
+                            <h3>Total Revenue</h3>
+                            <h1>NGN 600,500</h1>
+                        </div>
+                    </div>
+                </div>
+                    <p> +37% from last month (NGN10,185)</p>
+                </div>
+            <!--orders-->
+            <div class="orders">
+                <div class="order">
+                <div class="orders_icon">
+                <img src="./images/order2.png" alt="">
+                </div>
+                <div class="middle">
+                    <div class="progress">
+                        <h3>Total Orders</h3>
+                        <h1>2,567</h1>
+                    </div>
+                </div>
+            </div>
+            <p>-10% from last month (309 orders)</p>
+            </div>
+                <!--Visitors-->
+                <div class="visitors">
+                    <div class="visitor">
+                    <div class="visitors_icon">
+                    <img src="./images/cutomer.png" alt="">
+                    </div>
+                    <div class="middle">
+                        <div class="progress">
+                            <h3>Todays's Visitor</h3>
+                            <h1>1,459</h1>
+                        </div>
+                    </div>
+                </div>
+                <p> +22% from last month (148 visitors)</p>
+                </div>
+                <!--Conversion-->
+                <div class="conversions">
+                    <div class="conversion">
+                    <div class="conversions_icon">
+                    <img src="./images/rate.png" alt="">
+                    </div>
+                    <div class="middle">
+                        <div class="progress">
+                            <h3>Conversion Rate</h3>
+                            <h1>15%</h1>
+                        </div>
+                    </div>
+                </div>
+                <p> -1.5% from yesterday (6.5% rate)</p>
+                </div>
+    
+            </div>
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <h2 class="chart-title">Top 5 Products</h2>
+                    <div id="bar-chart"></div>
+                </div>
+    
+                <div class="charts-card">
+                    <h2 class="chart-title">Purchase and Sales Orders</h2>
+                    <div id="area-chart"></div>
+                </div>
+    
+            </div>
+
+            <section class="recent">
+                <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>Recent activity</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                                <th>Project</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Team</th>
+                                <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>App Development</td>
+                            <td>15 Aug, 2020</td>
+                            <td>22 Aug, 2020</td>
+                            <td class="td-team">
+                                <div class="img-1"></div>
+                                <div class="img-2"></div>
+                                <div class="img-3"></div>
+                            </td>
+                            <td>
+                                <span class="badge success">Success</span></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Logo Design</td>
+                            <td>15 Aug, 2020</td>
+                            <td>22 Aug, 2020</td>
+                            <td class="td-team">
+                                <div class="img-1"></div>
+                                <div class="img-2"></div>
+                                <div class="img-3"></div>
+                            </td>
+                            <td><span class="badge warning">Processing</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Server setup</td>
+                            <td>15 Aug, 2020</td>
+                            <td>22 Aug, 2020</td>
+                            <td class="td-team">
+                                <div class="img-1"></div>
+                                <div class="img-2"></div>
+                                <div class="img-3"></div>
+                            </td>
+                            <td><span class="badge success">Success</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Front-end Design</td>
+                            <td>15 Aug, 2020</td>
+                            <td>22 Aug, 2020</td>
+                            <td class="td-team">
+                                <div class="img-1"></div>
+                                <div class="img-2"></div>
+                                <div class="img-3"></div>
+                            </td>
+                            <td><span class="badge warning">Processing</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Web Development</td>
+                            <td>15 Aug, 2020</td>
+                            <td>22 Aug, 2020</td>
+                            <td class="td-team">
+                                <div class="img-1"></div>
+                                <div class="img-2"></div>
+                                <div class="img-3"></div>
+                            </td>
+                            <td><span class="badge success">Success</span></td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="summary">
+                <div class="summary-card">
+                    <div class="summary-single">
+                        <span class="ti-id-badge">
+                            <img src="products (2).png" alt="">
+                        </span>
+                        <div>
+                    <h5>196</h5>
+                    <small>Number of Staff</small>
+                </div>
+            </div>
+
+            <div class="summary-single">
+                <span class="ti-calender">
+                    <img src="rate.png" alt="">
+                </span>
+                <div>
+            <h5>16</h5>
+            <small>Number of leave</small>
+        </div>
+            </div>
+            <div class="summary-single">
+                <span class="ti-face-smile">
+                    <img src="inventory_2_FILL0_wght400_GRAD0_opsz48 (1).png" alt="">
+                </span>
+                <div>
+            <h5>12</h5>
+            <small>Profile update request</small>
+        </div>
+    </div>
+    </div>
+
+            <div class="bday-card">
+                <div class="bday-flex">
+                    <div class="bday-img"></div>
+                    <div class="bday-info">
+                    <h5>Dwayne Sandra</h5>
+                    <small>Birthday Today</small>
+                    </div>
+                </div>
+                
+                    <div class="submit-btn">
+                        <button>
+                            <span class="ti-gift">
+                            <img src="products (2).png" alt="">
+                        </span> Wish Her</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
